@@ -1,4 +1,4 @@
-# @platane/config
+# @platane-io/config
 
 Shared tooling config for [Platane](https://platane.io) projects: strict
 [oxlint](https://oxc.rs/docs/guide/usage/linter) presets for our stack.
@@ -19,7 +19,7 @@ off: formatting belongs to the formatter, the rest is taste.
 ## Usage
 
 ```sh
-pnpm add -D -w oxlint oxlint-tsgolint @platane/config
+pnpm add -D -w oxlint oxlint-tsgolint @platane-io/config
 ```
 
 Point each app at its preset with a nested config (`extends` takes file
@@ -27,7 +27,7 @@ paths, resolved from the config file):
 
 ```jsonc
 // apps/www/.oxlintrc.json
-{ "extends": ["../../node_modules/@platane/config/oxlint/tanstack-start.json"] }
+{ "extends": ["../../node_modules/@platane-io/config/oxlint/tanstack-start.json"] }
 ```
 
 Keep `options` and the ignore list in the **root** `.oxlintrc.json`: oxlint
@@ -52,4 +52,4 @@ Then `"lint": "oxlint"` at the repo root.
 
 Bump `version` in `package.json`, merge, then publish a GitHub release tagged
 `vX.Y.Z`: the `Publish` workflow runs the preset tests and publishes to npm
-with provenance.
+through trusted publishing (OIDC, no stored token), with provenance.
