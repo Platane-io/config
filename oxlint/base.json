@@ -21,7 +21,8 @@
     "eslint/max-lines-per-function": "off",
     "import/max-dependencies": "off",
     "eslint/no-inline-comments": "off",
-    "import/namespace": "off"
+    "import/namespace": "off",
+    "eslint/max-lines": "off"
   },
   "overrides": [
     {
