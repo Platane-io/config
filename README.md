@@ -13,7 +13,7 @@ Shared tooling config for [Platane](https://platane.io) projects: strict
 `base` enables the `correctness`, `suspicious`, `perf` and `pedantic`
 categories as errors (minus `prefer-readonly-parameter-types`), plus
 `no-console` (no exception), `node:` imports and no blanket disable comments. The vitest
-plugin applies to `*.test.*` / `*.spec.*` files. `style` and `restriction` stay
+plugin applies to `*.test.*` / `*.spec.*` files. `consistent-return` is off (TypeScript's `noImplicitReturns` already covers it, and it clashes with effects that only sometimes return a cleanup); `no-useless-undefined` ignores arguments (`schema.catch(undefined)`). `style` and `restriction` stay
 off: formatting belongs to the formatter, the rest is taste.
 
 ## Usage

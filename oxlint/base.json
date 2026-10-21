@@ -22,7 +22,14 @@
     "import/max-dependencies": "off",
     "eslint/no-inline-comments": "off",
     "import/namespace": "off",
-    "eslint/max-lines": "off"
+    "eslint/max-lines": "off",
+    "typescript/consistent-return": "off",
+    "unicorn/no-useless-undefined": [
+      "error",
+      {
+        "checkArguments": false
+      }
+    ]
   },
   "overrides": [
     {

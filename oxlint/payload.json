@@ -17,6 +17,15 @@
         "allow": ["**/*.css", "@payloadcms/next/css"]
       }
     ],
-    "unicorn/prefer-import-meta-properties": "off"
-  }
+    "unicorn/prefer-import-meta-properties": "off",
+    "jsx-a11y/prefer-tag-over-role": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/seed/**"],
+      "rules": {
+        "eslint/no-await-in-loop": "off"
+      }
+    }
+  ]
 }
