@@ -8,12 +8,7 @@
     "pedantic": "error"
   },
   "rules": {
-    "eslint/no-console": [
-      "error",
-      {
-        "allow": ["warn", "error"]
-      }
-    ],
+    "eslint/no-console": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/no-abusive-eslint-disable": "error",
     "import/no-unassigned-import": [
