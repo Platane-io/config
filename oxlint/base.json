@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc", "import", "promise"],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "error",
+    "perf": "error",
+    "pedantic": "error"
+  },
+  "rules": {
+    "eslint/no-console": "error",
+    "unicorn/prefer-node-protocol": "error",
+    "unicorn/no-abusive-eslint-disable": "error",
+    "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }],
+    "typescript/prefer-readonly-parameter-types": "off",
+    "import/namespace": "off"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{test,spec}.{ts,tsx,js,jsx}"],
+      "plugins": ["vitest"]
+    }
+  ]
+}

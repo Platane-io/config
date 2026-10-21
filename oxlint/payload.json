@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "extends": ["./base.json"],
+  "plugins": ["react", "jsx-a11y", "nextjs"],
+  "env": { "browser": true, "node": true },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/exhaustive-deps": "error",
+    "react/react-in-jsx-scope": "off",
+    "eslint/no-underscore-dangle": "off",
+    "import/no-unassigned-import": [
+      "error",
+      { "allow": ["**/*.css", "@payloadcms/next/css"] }
+    ]
+  }
+}
