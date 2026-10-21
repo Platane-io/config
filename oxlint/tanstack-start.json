@@ -2,10 +2,25 @@
   "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
   "extends": ["./base.json"],
   "plugins": ["react", "jsx-a11y"],
-  "env": { "browser": true, "node": true },
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
     "react/rules-of-hooks": "error",
     "react/exhaustive-deps": "error",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "typescript/only-throw-error": [
+      "error",
+      {
+        "allow": [
+          {
+            "from": "package",
+            "package": "@tanstack/router-core",
+            "name": ["NotFoundError", "Redirect"]
+          }
+        ]
+      }
+    ]
   }
 }

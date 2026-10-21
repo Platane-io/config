@@ -8,11 +8,24 @@
     "pedantic": "error"
   },
   "rules": {
-    "eslint/no-console": "error",
+    "eslint/no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
     "unicorn/prefer-node-protocol": "error",
     "unicorn/no-abusive-eslint-disable": "error",
-    "import/no-unassigned-import": ["error", { "allow": ["**/*.css"] }],
+    "import/no-unassigned-import": [
+      "error",
+      {
+        "allow": ["**/*.css"]
+      }
+    ],
     "typescript/prefer-readonly-parameter-types": "off",
+    "eslint/max-lines-per-function": "off",
+    "import/max-dependencies": "off",
+    "eslint/no-inline-comments": "off",
     "import/namespace": "off"
   },
   "overrides": [

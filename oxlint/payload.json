@@ -8,9 +8,6 @@
     "react/exhaustive-deps": "error",
     "react/react-in-jsx-scope": "off",
     "eslint/no-underscore-dangle": "off",
-    "import/no-unassigned-import": [
-      "error",
-      { "allow": ["**/*.css", "@payloadcms/next/css"] }
-    ]
+    "import/no-unassigned-import": ["error", { "allow": ["**/*.css", "@payloadcms/next/css"] }]
   }
 }
