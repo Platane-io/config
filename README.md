@@ -12,7 +12,7 @@ Shared tooling config for [Platane](https://platane.io) projects: strict
 
 `base` enables the `correctness`, `suspicious`, `perf` and `pedantic`
 categories as errors (minus `prefer-readonly-parameter-types`), plus
-`no-console`, `node:` imports and no blanket disable comments. The vitest
+`no-console` (no exception), `node:` imports and no blanket disable comments. The vitest
 plugin applies to `*.test.*` / `*.spec.*` files. `style` and `restriction` stay
 off: formatting belongs to the formatter, the rest is taste.
 
