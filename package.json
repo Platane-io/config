@@ -1,33 +1,33 @@
 {
   "name": "@platane-io/config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Platane's shared tooling config: oxlint presets for TypeScript, TanStack Start, Payload and Node.",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Platane-io/config.git"
   },
-  "type": "module",
   "files": [
     "LICENSE",
     "README.md",
     "oxlint/"
   ],
+  "type": "module",
   "exports": {
     "./oxlint/*": "./oxlint/*"
-  },
-  "scripts": {
-    "test": "sh test/presets.sh"
-  },
-  "peerDependencies": {
-    "oxlint": ">=1.89.0"
-  },
-  "devDependencies": {
-    "oxlint": "1.89.0"
   },
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "scripts": {
+    "test": "sh test/presets.sh"
+  },
+  "devDependencies": {
+    "oxlint": "1.89.0"
+  },
+  "peerDependencies": {
+    "oxlint": ">=1.89.0"
   },
   "packageManager": "pnpm@12.14.0"
 }
