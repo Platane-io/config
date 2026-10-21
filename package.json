@@ -1,6 +1,6 @@
 {
-  "name": "@platane-io/config",
-  "version": "1.0.1",
+  "name": "@platane-hq/config",
+  "version": "1.0.0",
   "description": "Platane's shared tooling config: oxlint presets for TypeScript, TanStack Start, Payload and Node.",
   "license": "MIT",
   "repository": {
